@@ -1,0 +1,172 @@
+<div class="main">
+    <div class="dash">
+        <div class="dash-child1">
+            <h2>Dashboard</h2>
+            <p>20 Sep 2019, Friday</p>
+        </div>
+        <div class="dash-child2">
+            <div>Wellcome back Anna!</div>
+            <p>You've learned 80% of your goal this week! <br> keep it up and improve your result!</p>
+        </div>
+        <div class="dash-child3">
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 200px;text-align: left;">Latest results</th>
+                            <th>More -></th>
+                        </tr>
+                    </thead>
+                    <tbody *ngIf="latestResult">
+                        <tr *ngFor="let a of latestResult;let i = index">
+                            <td>{{a.unitTitle}}</td>
+                            <td>
+                                <div></div>
+                                <div>{{a.score}}</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody *ngIf="!latestResult">
+                        <tr>
+                            <td>api not working</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 200px;text-align: left;">Time spent on learning</th>
+                            <th>Last Week </th>
+                        </tr>
+                    </thead>
+                    <tbody *ngIf="latestResult">
+                        <tr *ngFor="let a of latestResult;let i = index">
+                            <td>{{a.unitTitle}}</td>
+                            <td>
+                                <div></div>
+                                <div>{{a.score}}</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody *ngIf="!latestResult">
+                        <tr>
+                            <td>api not working</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div>
+            Your Courses
+        </div>
+        <div class="dash-child4">
+            <div class="card2">
+                <div class="card2-child">B2</div>
+                <div>
+                    <p>Business English</p>
+                    <h2>Grammer</h2>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card2-child">B2</div>
+                <div>
+                    <p>Business English</p>
+                    <h2>Grammer</h2>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card2-child">B2</div>
+                <div>
+                    <p>Business English</p>
+                    <h2>Grammer</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="right-pannel">
+        <div class="child1">
+            <div>Logout</div>
+            <span class="material-symbols-outlined">
+                logout
+            </span>
+        </div>
+        <div class="child2">
+            <div></div>
+            <span>Anna Morrison</span>
+            <p>Student</p>
+        </div>
+        <div class="child3">
+            <div>
+                B2
+            </div>
+            <div>
+                <h2>English</h2>
+                <p>High Intermediate</p>
+            </div>
+            <div class="bar">
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <div class="child3">
+            <div>
+                B2
+            </div>
+            <div>
+                <h2>Spanish</h2>
+                <p>High Intermediate</p>
+            </div>
+            <div class="bar ">
+                <div class="bar1">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="child1">
+            <div>Reminders</div>
+            <span class="material-symbols-outlined">
+                notifications
+            </span>
+        </div>
+        <div class="child3">
+            <div>
+                <span class="material-symbols-outlined">
+                    error
+                </span>
+            </div>
+            <div>
+                <h2>Eng-vocabular Test</h2>
+                <p>@4th Sep 2019, Friday</p>
+            </div>
+        </div>
+        <div class="child3">
+            <div>
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+            </div>
+            <div>
+                <h2>Eng-Grammer Homework</h2>
+                <p>@4th Sep 2019, Friday</p>
+            </div>
+        </div>
+        <div class="child3">
+            <div>
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+            </div>
+            <div>
+                <h2>Spanish-Send Essay</h2>
+                <p>@4th Sep 2019, Friday</p>
+            </div>
+        </div>
+    </div>
+</div>

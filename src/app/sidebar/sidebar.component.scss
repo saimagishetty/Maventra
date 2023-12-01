@@ -1,0 +1,32 @@
+.sidebar{
+    background: #fff;
+    max-width: 180px;
+    // width: 20vw !important;
+    padding: 30px;
+    height: 100vh;
+    .sidebar-child{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 50px;
+        span{
+            width: 30px;
+        }
+    }
+}
+.main{
+    padding-bottom: 50px;
+    p{
+        font-weight: 800;
+        font-weight: 24px;
+    }
+}
+.active{
+    color: rgb(9, 9, 239);
+}
+a {
+    color: inherit; 
+    text-decoration: none; 
+    cursor: pointer; 
+  }
